@@ -1,0 +1,20 @@
+{
+  "name": "clases-boostrap",
+  "version": "1.0.0",
+  "description": "es la clase de boostrap con scss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compilar": "sass estilos.scss styles/estilos.css",
+    "ejecutar":"tsc ejercicio.ts "
+  },
+  "author": "juan velez",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  },
+  "devDependencies": {
+    "sass": "^1.23.0-module.beta.1",
+    "typescript": "^3.6.2"
+  }
+}

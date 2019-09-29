@@ -1,0 +1,86 @@
+body {
+  font-family: Helvetica, sans-seriff;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+}
+
+.clase_1 {
+  font-size: 27px;
+}
+
+.clase_2 {
+  font-size: 30px;
+}
+
+.clase_3 {
+  font-size: 33px;
+}
+
+.clase_4 {
+  font-size: 36px;
+}
+
+.clase_5 {
+  font-size: 39px;
+}
+
+.clase_6 {
+  font-size: 42px;
+}
+
+.leon-foto {
+  padding: 20 px;
+}
+
+.perro-foto {
+  padding: 20 px;
+}
+
+.gato-foto {
+  padding: 20 px;
+}
+
+.elefante-foto {
+  padding: 20 px;
+}
+
+img {
+  border-width: 30px;
+  padding: 100px;
+  color: red;
+}
+
+.img2 {
+  border-width: 300em;
+  padding: 100px;
+  color: yellow;
+}
+
+.clase_funcion {
+  margin: 32px;
+  font-family: "hola";
+}
+
+.alumnos_md {
+  color: #FF0000;
+}
+
+.alumnos_lg {
+  color: #00FF00;
+}
+
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi) {
+  body {
+    border-width: 60px;
+    padding: 100px;
+    color: gray;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

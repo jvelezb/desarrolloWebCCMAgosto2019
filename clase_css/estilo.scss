@@ -1,0 +1,97 @@
+$miFuente : Helvetica, sans-seriff;
+
+
+body{
+	font-family: $miFuente;
+}
+
+nav{
+	ul{ 
+		margin: 0;
+		padding:0;
+	}
+	li{
+		display: inline-block;
+	}
+
+}
+@for $iterador from 1 through 6{
+    .clase_#{$iterador} {
+    	font-size: 24px +3* $iterador;
+    }
+}
+
+@each $animal in leon,perro,gato,elefante{
+	.#{$animal}-foto{
+		padding: 20 px;
+	}	
+}
+
+@mixin borde($tamano){
+	border-width: $tamano *3;
+	padding:100px; 
+}
+
+img{
+	@include borde(10px);
+	color:red;
+}
+
+.img2{
+	@include borde(100em);
+	color:yellow;
+}
+
+@function pow($base,$exp){
+	$resultado : 1;
+	@for $_ from 1 through $exp{
+		$resultado: $resultado * $base;
+	}
+	@return $resultado;
+}
+
+@function prueba(){
+	@return "hola";
+}
+
+.clase_funcion{
+	margin: pow(2,5)*1px;
+	font-family: prueba();
+}
+ 
+ $selector : 'alumnos';
+
+.#{$selector}_md{
+	color : #FF0000;
+}
+
+
+.#{$selector}_lg{
+	color : #00FF00;
+}
+
+@media(min-width:768px) and
+	(-webkit-min-device-pixel-ratio: 2),
+	(min-width: 768px) and (min-resolution:192dpi){
+
+
+		body{
+			@include borde(20px);
+			color: gray;
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+<p>{{'saludos.text'| translate }}</p>
+
+{{'parrafo.Titulo1'|translate}}
+<button class="btn btn-primary "  (click)="cambiarLenguaje('es')" [ngClass]="{'btn-danger btn-lg':lenguaje =='es'}">Español</button><br>
+<button class="btn btn-primary btn-lg"  (click)="cambiarLenguaje('en')" [ngClass]="{'btn-danger':lenguaje =='en'}">Inglés</button><br>
+<button  class="btn btn-primary btn-lg" (click)="cambiarLenguaje('pr')" [ngClass]="{'btn-danger':lenguaje =='pr'}">Portugués</button><br>
