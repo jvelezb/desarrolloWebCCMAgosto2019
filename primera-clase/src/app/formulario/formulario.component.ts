@@ -11,8 +11,10 @@ import { Router } from '@angular/router';
 })
 export class FormularioComponent implements OnInit {
 
+    
+    submitted =false;
     alumno:Alumno;
-    carreras = ["ITC","LAE","IIS","LEM"];
+     carreras = ["ITC","LAE","IIS","LEM"];
 
   constructor(private router: Router) { 
         this.alumno = new Alumno();
@@ -21,8 +23,10 @@ export class FormularioComponent implements OnInit {
   ngOnInit() {
     
   }
-  enviarFormulario(parametros){
-    console.log(parametros);
+  enviarFormulario(){
+    this.submitted = true;
+    console.log(this.alumno);
+    this.alumno = new Alumno();
   }
 
 }

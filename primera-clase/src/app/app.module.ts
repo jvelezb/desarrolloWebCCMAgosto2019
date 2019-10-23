@@ -15,6 +15,8 @@ import { ParrafoComponent } from './parrafo/parrafo.component';
 import {AlumnoComponent} from './alumno/alumno.component';
 import { ProfesorComponent } from './profesor/profesor.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { SettingsComponent } from './components/main/settings/settings.component';
+import { MainComponent } from './components/main/main.component';
 const rutas: Routes=[
     {
         path: 'parrafo',
@@ -50,7 +52,9 @@ const rutas: Routes=[
     ParrafoComponent,
     AlumnoComponent,
     ProfesorComponent,
-    FormularioComponent
+    FormularioComponent,
+    SettingsComponent,
+    MainComponent
   ],
   imports: [
     RouterModule.forRoot(rutas),//agregrar para router

@@ -1,1 +1,5 @@
 <p>Matricula {{matricula}}</p>
+<ul >
+    <li *ngFor="let alumno of alumnos">{{alumno.matricula}}</li>
+</ul>
+<button (click)="anadirAlumno()">boton</button>
