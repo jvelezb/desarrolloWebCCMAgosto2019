@@ -1,0 +1,25 @@
+{
+  "name": "starwarapi",
+  "connector": "rest",
+  "baseURL": "https://swapi.co/api/",
+  "crud": false,
+  "options": {
+    "headers": {
+      "accept": "application/json",
+      "content-type": "application/json",
+      "app-id":"",
+      "secret_id":"sfdfsdfsfa"
+    }
+  },
+  "operations": [
+    {
+      "template": {
+        "method": "GET",
+        "url": "https://swapi.co/api/people/{personId}"
+      },
+      "functions": {
+        "getCharacter": ["personId"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "tituloComponent":
+  	{ "title" : "listado de alumnos"}
+  	,"alumnosComponent":{
+  		"matricula":"Matricula",
+  		"nombre":"Nombre(s)",
+  		"paterno":"A. Paterno",
+  		"materno":"A Manrno", "opciones":"Opciones"},
+  		"formulario":{
+  		"matricula":"ID",
+  		"nombre":"First Name",
+  		"paterno":"Last Name",
+  		"materno":"Mother's Name",
+      "opciones":"Opciones"},
+      "admin":{
+        "insert":{
+          "titulo":"Bienvenido"
+        }
+        
+      }
+}

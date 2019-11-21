@@ -1,0 +1,11 @@
+{
+  "name": "MongoDB",
+  "connector": "mongodb",
+  "url": "mongodb+srv://juanvelez:tvbl6u1m@cluster0-8cswa.mongodb.net/desarrolloweb?retryWrites=true&w=majority",
+  "host": "cluster0-8cswa.mongodb.net",
+  "port": 27017,
+  "user": "juanvelez",
+  "password": "tvbl6u1m",
+  "database": "desarrolloweb",
+  "useNewUrlParser": true
+}

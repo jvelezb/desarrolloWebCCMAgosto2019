@@ -17,11 +17,17 @@ import { ProfesorComponent } from './profesor/profesor.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { SettingsComponent } from './components/main/settings/settings.component';
 import { MainComponent } from './components/main/main.component';
+import { ChartsModule } from 'ng2-charts';
+import { GraficaComponent } from './grafica/grafica.component';
 const rutas: Routes=[
     {
         path: 'parrafo',
         component:ParrafoComponent    
     },
+    {
+      path: 'grafica',
+      component:GraficaComponent    
+  },
     {
         path: 'alumno/:matricula',
         component: AlumnoComponent
@@ -54,11 +60,13 @@ const rutas: Routes=[
     ProfesorComponent,
     FormularioComponent,
     SettingsComponent,
-    MainComponent
+    MainComponent,
+    GraficaComponent
   ],
   imports: [
     RouterModule.forRoot(rutas),//agregrar para router
     BrowserModule,
+    ChartsModule,
     FormsModule,
     HttpClientModule,
     TranslateModule.forRoot({
